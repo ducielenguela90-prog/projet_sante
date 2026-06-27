@@ -98,14 +98,12 @@ m3_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 4 - SRO
 m4_nom = 'Sérum de Réhydratation Orale'
-m4_categorie = 'Réhydratation'
 m4_quantite_disponible = 15600
 m4_seuil_rupture = 5000
 m4_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 5 - Vaccin Antipaludéen
 m5_nom = 'Vaccin Antipaludéen'
-m5_categorie = 'Vaccin'
 m5_quantite_disponible = 5000
 m5_seuil_rupture = 1000
 m5_cout_unitaire = 2000.0  # en FCFA
