@@ -80,31 +80,31 @@ h5_population_zone = 200_000
 # === SECTION C : VARIABLES DES 5 MÉDICAMENTS ===
 # Médicament 1 - Artemether-Lumefantrine (antipaludéen)
 m1_nom = 'Artemether-Lumefantrine'
-m1_quantite_disponible = 8450
+m1_stock = 8450
 m1_seuil_rupture = 2000
 m1_cout_unitaire = 3500.0  # en FCFA
 
 # Médicament 2 - Amoxicilline 500mg (antibiotique)
 m2_nom = 'Amoxicilline 500mg'
-m2_quantite_disponible = 3200
+m2_stock = 3200
 m2_seuil_rupture = 800
 m2_cout_unitaire = 850.0  # en FCFA
 
 # Médicament 3 - Paracétamol (antidouleur)
 m3_nom = 'Paracétamol'
-m3_quantite_disponible = 15000
+m3_stock = 15000
 m3_seuil_rupture = 5000
 m3_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 4 - SRO
 m4_nom = 'Sérum de Réhydratation Orale'
-m4_quantite_disponible = 15600
+m4_stock = 15600
 m4_seuil_rupture = 5000
 m4_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 5 - Vaccin Antipaludéen
 m5_nom = 'Vaccin Antipaludéen'
-m5_quantite_disponible = 5000
+m5_stock = 5000
 m5_seuil_rupture = 1000
 m5_cout_unitaire = 2000.0  # en FCFA
 
@@ -120,7 +120,7 @@ total_lits_occupes = h1_nb_lits_occupes + h2_nb_lits_occupes + h3_nb_lits_occupe
 taux_occupation_moyen = round((total_lits_occupes / total_lits) * 100, 2)
 
 # 3. Valeur totale du stock de médicaments
-valeur_totale_stock = m1_quantite_disponible * m1_cout_unitaire + m2_quantite_disponible * m2_cout_unitaire + m3_quantite_disponible * m3_cout_unitaire + m4_quantite_disponible * m4_cout_unitaire + m5_quantite_disponible * m5_cout_unitaire
+valeur_totale_stock = m1_stock * m1_cout_unitaire + m2_stock * m2_cout_unitaire + m3_stock * m3_cout_unitaire + m4_stock * m4_cout_unitaire + m5_stock * m5_cout_unitaire
 
 # === SECTION E : RAPPORT D'INVENTAIRE ===
 print("==================================================================================")
@@ -140,6 +140,7 @@ print(f"Densite medicale nationale : {densite_medicale_nationale} medecins/1000 
 print(f"Taux d'occupation moyen : {taux_occupation_moyen}%")
 print(f"Valeur totale du stock : {valeur_totale_stock:,} FCFA")
 
+'''
 print("\n--- ALERTES ---")
 if densite_medicale_nationale < SEUIL_OMS_DENSITE_MEDICALE:
     print(f"! ALERTE : Densite medicale nationale critique ({densite_medicale_nationale} < {SEUIL_OMS_DENSITE_MEDICALE})")
@@ -147,3 +148,5 @@ if taux_occupation_moyen > 85:
     print(f"ALERTE : Taux d'occupation moyen eleve ({taux_occupation_moyen}% > 85%)")
 if taux_occupation_moyen < 70:
     print(f"ALERTE : Taux d'occupation moyen faible ({taux_occupation_moyen}% < 70%)")
+    
+'''
