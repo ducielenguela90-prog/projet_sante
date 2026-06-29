@@ -80,31 +80,31 @@ h5_population_zone = 200_000
 # === SECTION C : VARIABLES DES 5 MÉDICAMENTS ===
 # Médicament 1 - Artemether-Lumefantrine (antipaludéen)
 m1_nom = 'Artemether-Lumefantrine'
-m1_stock = 8450
+m1_stock = int(input("Entrez le stock actuel d'Artemether-Lumefantrine : "))
 m1_seuil_rupture = 2000
 m1_cout_unitaire = 3500.0  # en FCFA
 
 # Médicament 2 - Amoxicilline 500mg (antibiotique)
 m2_nom = 'Amoxicilline 500mg'
-m2_stock = 3200
+m2_stock = int(input("Entrez le stock actuel d'Amoxicilline 500mg : "))
 m2_seuil_rupture = 800
 m2_cout_unitaire = 850.0  # en FCFA
 
 # Médicament 3 - Paracétamol (antidouleur)
 m3_nom = 'Paracétamol'
-m3_stock = 15000
+m3_stock = int(input("Entrez le stock actuel de Paracétamol : "))
 m3_seuil_rupture = 5000
 m3_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 4 - SRO
 m4_nom = 'Sérum de Réhydratation Orale'
-m4_stock = 15600
+m4_stock = int(input("Entrez le stock actuel de Sérum de Réhydratation Orale : "))
 m4_seuil_rupture = 5000
 m4_cout_unitaire = 125.0  # en FCFA
 
 # Médicament 5 - Vaccin Antipaludéen
 m5_nom = 'Vaccin Antipaludéen'
-m5_stock = 5000
+m5_stock = int(input("Entrez le stock actuel de Vaccin Antipaludéen : "))
 m5_seuil_rupture = 1000
 m5_cout_unitaire = 2000.0  # en FCFA
 
