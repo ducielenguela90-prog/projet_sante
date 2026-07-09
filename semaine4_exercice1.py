@@ -76,14 +76,14 @@ for i in range (nb_districts) :
     print(' Letalite :', round(letalite, 1), '%')
     print()
     
-# Affichage des donnees saisies pour chaque district
-print(f"--- Donnees du district {district} ---")
-for j in range(len(Tableau_donnees)):
-    print(f"District : {Tableau_donnees[j]['district']}")
-    print(f"Departement : {Tableau_donnees[j]['departement']}")
-    print(f"Cas suspects : {Tableau_donnees[j]['suspects']}")
-    print(f"Cas confirmes : {Tableau_donnees[j]['confirmes']}")
-    print(f"Deces : {Tableau_donnees[j]['deces']}")
+    # # Affichage des donnees saisies pour chaque district
+    # print(f"--- Donnees du district {district} ---")
+    # for j in range(len(Tableau_donnees)):
+    #     print(f"District : {Tableau_donnees[j]['district']}")
+    #     print(f"Departement : {Tableau_donnees[j]['departement']}")
+    #     print(f"Cas suspects : {Tableau_donnees[j]['suspects']}")
+    #     print(f"Cas confirmes : {Tableau_donnees[j]['confirmes']}")
+    #     print(f"Deces : {Tableau_donnees[j]['deces']}")
  
 # Impression du rapport national
 
